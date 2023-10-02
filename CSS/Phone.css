@@ -1,0 +1,111 @@
+/*  For Making the Website Responsive we are using this CSS File  */
+
+
+
+
+/* Navigation */
+
+#navbar{
+    flex-direction: column;
+    padding: 50px;
+}
+
+#navbar ul li a{
+    padding:0px 7px;
+    font-size: 1rem;
+    padding-bottom: 8px;
+ 
+}
+
+
+
+
+
+/* Home Section  */
+
+#home{
+
+    height: 306px;
+    padding: 50px;
+
+}
+#home::before{
+
+    height: 700px;
+
+}
+
+
+#home p{
+    font-size: 13px;
+}
+
+
+
+/*  Services Section  */
+
+#services{
+    flex-direction: column;  /* For Wrapping the Flex boxes*/
+
+
+    
+}
+
+
+#services .box{
+    padding: 14px;
+    margin: 2px 15px;
+    margin-bottom: 20px;
+
+
+
+    
+}
+
+
+#services .box img {
+    height: 113px;
+
+}
+
+/* Clients Section */
+
+
+
+
+#client{
+    flex-wrap: wrap;
+}
+
+
+#client img{
+    
+    height: 35px;
+  
+}
+
+
+
+
+
+
+
+/* Contact us Section  */
+
+
+#contact-box form{
+    width: 80%;
+}
+
+/* Footer  */
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 23px;
+}
+
+
+.btn{
+    font-size: 15px; 
+}

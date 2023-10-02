@@ -1,0 +1,388 @@
+
+
+/* Navigation Section  */
+
+/* ------------------------------------------------------------------------ */
+
+/* CSS Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Making CSS Variable is Good practicce for Beginners  */ 
+
+:root{
+
+    --narbar-height:50px;
+
+}
+
+
+/* Navigationb bar */
+
+#navbar{
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    
+   
+}
+
+
+/* Navigation bar : Logo and Image */
+
+#logo{
+
+    margin: 34px 45px;
+   
+
+
+
+}
+
+#logo img{
+    height: 80px;
+    margin: 9px;
+
+
+}
+
+
+
+
+/* Navigation bar : List Styling */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+    
+}
+
+
+#navbar ul{
+    display: flex;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;  /*This is brings all our content front  */
+    opacity: 0.6;
+
+
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    border-radius: 50px;
+}
+#navbar ul li a:hover{
+    
+    color: rgb(0, 0, 0);
+    background-color:white;
+
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Home Section */
+
+
+/* ------------------------------------------------------------------------ */
+
+
+#home{
+
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 522px;
+    
+    
+}
+
+#home::before{
+    
+    content: " ";
+
+    /* We using "../" to came out from a particular folder */
+    background: url('../bg1.jpg') no-repeat center center/cover;
+
+    top: 0px;
+    left: 0px;
+
+    position: absolute;
+    height: 648px;
+    width: 100%;
+    z-index: -1;  /*This is brings all our content front  */
+    opacity: 0.9;
+    
+
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#home p{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Servies Section  - between body */
+
+
+/* ------------------------------------------------------------------------ */
+
+
+#services{
+
+    margin: 34px;
+    display: flex;
+
+}
+
+#services .box{
+    border: 5px solid brown;
+    margin: 15px;
+    border-radius: 30px;
+    padding: 34px;
+    background-color: antiquewhite;
+
+
+    
+}
+
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+
+}
+
+#services .box p{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/*  Utility Class  - between body */
+
+
+/* ------------------------------------------------------------------------ */
+
+
+
+.h-primary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4rem;
+    padding: 45px;
+
+}
+
+.h-secondary{
+    font-family:cursive;
+    font-size: 2.3rem;
+    padding: 12px;
+
+
+}
+
+
+.btn{
+    padding: 5px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 40px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;   /* It Changes the cursor style*/
+
+
+
+}
+
+
+.center{
+    text-align: center;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Client Section*/
+
+
+/* ------------------------------------------------------------------------ */
+
+
+#client-section{
+  height: 344px;
+  
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("../bg.jpg");
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.3;
+    
+  
+}
+
+
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client img{
+    height: 100px;
+}
+
+
+.client-item{
+    padding: 40px;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Contact Section*/
+
+
+/* ------------------------------------------------------------------------ */
+
+
+#contact{
+    position: relative;
+    
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+    background: url("../contact.jpg") no-repeat center center/cover;
+
+
+}
+
+
+#contact-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+
+
+#contact-box input,textarea
+{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+
+    
+    
+
+}
+
+#contact-box form{
+    width: 40%;
+    
+
+}
+#contact-box label{
+    font-size: 1.3rem;  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------------ */
+
+
+/* Footer Section - Last Part*/
+
+
+/* ------------------------------------------------------------------------ */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
